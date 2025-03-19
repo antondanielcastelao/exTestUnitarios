@@ -30,5 +30,23 @@ public class DNITest {
 
     }
 
+    // Pila de test para el metodo calcularLetraDNI
+
+    @ParameterizedTest(name = "{0}{1}")
+    @DisplayName("calcularLetraDNI")
+    @CsvSource({
+            "03655251, 'E'",
+            "00000000, 'T'",
+            "45733588, 'C'",
+            "11595568, 'A'",
+            "00871973, 'C'",
+            "41038596, 'H'",
+            "78044140, 'B'"
+    })
+    public void testCalcularLetraDNI(String nif, char expected) {
+        char letra = dni.calcularLetraDNI(nif);
+        Assertions.assertEquals(letra, expected, "La letra es incorrecta");
+    }
+
 
 }
