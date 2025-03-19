@@ -81,6 +81,4 @@ public class DNITest {
         char letra = dni.calcularLetraDNI(nif);
         Assertions.assertEquals(letra, expected, "La letra es incorrecta");
     }
-
-    // tests dni que no tienen 8 digitos
 }
