@@ -22,7 +22,7 @@ public class Dni {
      */
     public static char calcularLetraDNI (String dni) {
         // array de caracteres con las letras del DNI
-        char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'Q', 'S', 'V', 'H', 'L', 'C', 'K', 'E'};
+        char[] letrasDNI = {'T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E'};
         // calcula el resto de dividir el DNI entre 23
         int resto = Integer.parseInt(dni) % 23;
         // devuelve la letra correspondiente al resto
