@@ -1,5 +1,7 @@
-public class DNI {
-    public DNI() {}
+package com.dni;
+
+public class Dni {
+    public Dni() {}
     /**
      * Cmprueba DNI y su letra para ver si es correcto
      * @param dni
